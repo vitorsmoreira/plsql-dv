@@ -52,3 +52,48 @@ EXECUTE INCLUIR_LOGRADOURO(7, 'Praça Professor Rubião Meira', '05508-110');
 EXECUTE INCLUIR_LOGRADOURO(8, 'Rua Camargo Paes', '13073-350');
 EXECUTE INCLUIR_LOGRADOURO(9, 'Travessa Angustura', '90440-030');
 EXECUTE INCLUIR_LOGRADOURO(10, 'Rua Igênio Menta', '99713-162');
+
+-- Incluir Paciente
+
+EXECUTE INCLUIR_PACIENTE(
+    'Benedita Fátima Sandra Silveria',
+    '923.982.126-02',
+    TO_DATE('08/09/1946', 'DD/MM/YYYY'),
+    'Feminino',
+    'O-',
+    TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+EXECUTE INCLUIR_PACIENTE(
+    'Nina Rita Giovanna Assis',
+    '161.510.068-79',
+    TO_DATE('16/03/1949', 'DD/MM/YYYY'),
+    'Feminino',
+    'A-',
+    TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+EXECUTE INCLUIR_PACIENTE(
+    'Melissa Raquel Patrícia Alves',
+    '365.716.537-10',
+    TO_DATE('09/10/1944', 'DD/MM/YYYY'),
+    'Feminino',
+    'O-',
+    TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+EXECUTE INCLUIR_PACIENTE(
+    'Anthony Tomás Bruno das Neves',
+    '804.811.925-06',
+    TO_DATE('05/06/1979', 'DD/MM/YYYY'),
+    'Masculino',
+    'A-',
+    TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+EXECUTE INCLUIR_PACIENTE(
+    'Pedro Henrique Golçalves Medeiros',
+    '922.922.537-12',
+    TO_DATE('17/07/1988', 'DD/MM/YYYY'),
+    'Masculino',
+    'B-',
+    TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+
+-- 
