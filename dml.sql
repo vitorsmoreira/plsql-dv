@@ -55,7 +55,14 @@ EXECUTE INCLUIR_LOGRADOURO(10, 'Rua Igênio Menta', '99713-162');
 
 -- Incluir Paciente
 
-EXECUTE INCLUIR_PACIENTE(
+INSERT INTO T_DV_PACIENTE(
+    NM_PACIENTE,
+    NR_CPF,
+    DT_NASCIMENTO,
+    NM_SEXO_BIOLOGICO,
+    NM_TIPO_SANGUINEO,
+    DT_INCLUSAO
+) VALUES(
     'Benedita Fátima Sandra Silveria',
     '923.982.126-02',
     TO_DATE('08/09/1946', 'DD/MM/YYYY'),
@@ -63,7 +70,14 @@ EXECUTE INCLUIR_PACIENTE(
     'O-',
     TO_DATE('01/11/2023', 'DD/MM/YYYY')
 );
-EXECUTE INCLUIR_PACIENTE(
+INSERT INTO T_DV_PACIENTE(
+    NM_PACIENTE,
+    NR_CPF,
+    DT_NASCIMENTO,
+    NM_SEXO_BIOLOGICO,
+    NM_TIPO_SANGUINEO,
+    DT_INCLUSAO
+) VALUES(
     'Nina Rita Giovanna Assis',
     '161.510.068-79',
     TO_DATE('16/03/1949', 'DD/MM/YYYY'),
@@ -71,7 +85,14 @@ EXECUTE INCLUIR_PACIENTE(
     'A-',
     TO_DATE('01/11/2023', 'DD/MM/YYYY')
 );
-EXECUTE INCLUIR_PACIENTE(
+INSERT INTO T_DV_PACIENTE(
+    NM_PACIENTE,
+    NR_CPF,
+    DT_NASCIMENTO,
+    NM_SEXO_BIOLOGICO,
+    NM_TIPO_SANGUINEO,
+    DT_INCLUSAO
+) VALUES(
     'Melissa Raquel Patrícia Alves',
     '365.716.537-10',
     TO_DATE('09/10/1944', 'DD/MM/YYYY'),
@@ -79,7 +100,14 @@ EXECUTE INCLUIR_PACIENTE(
     'O-',
     TO_DATE('01/11/2023', 'DD/MM/YYYY')
 );
-EXECUTE INCLUIR_PACIENTE(
+INSERT INTO T_DV_PACIENTE(
+    NM_PACIENTE,
+    NR_CPF,
+    DT_NASCIMENTO,
+    NM_SEXO_BIOLOGICO,
+    NM_TIPO_SANGUINEO,
+    DT_INCLUSAO
+) VALUES(
     'Anthony Tomás Bruno das Neves',
     '804.811.925-06',
     TO_DATE('05/06/1979', 'DD/MM/YYYY'),
@@ -87,13 +115,66 @@ EXECUTE INCLUIR_PACIENTE(
     'A-',
     TO_DATE('01/11/2023', 'DD/MM/YYYY')
 );
-EXECUTE INCLUIR_PACIENTE(
+INSERT INTO T_DV_PACIENTE(
+    NM_PACIENTE,
+    NR_CPF,
+    DT_NASCIMENTO,
+    NM_SEXO_BIOLOGICO,
+    NM_TIPO_SANGUINEO,
+    DT_INCLUSAO
+) VALUES(
     'Pedro Henrique Golçalves Medeiros',
     '922.922.537-12',
     TO_DATE('17/07/1988', 'DD/MM/YYYY'),
     'Masculino',
     'B-',
     TO_DATE('01/11/2023', 'DD/MM/YYYY')
+);
+
+-- Incluir Remédio
+
+EXECUTE INCLUIR_REMEDIO('Paracetamol', 'Comprimido');
+EXECUTE INCLUIR_REMEDIO('Furosemida', 'Solução Oral');
+EXECUTE INCLUIR_REMEDIO('Metformina', 'Solução Oral');
+EXECUTE INCLUIR_REMEDIO('Atenolol', 'Injetável');
+EXECUTE INCLUIR_REMEDIO('Ibuprofeno', 'Suspensão');
+
+-- Sintomas das Doenças
+
+INSERT INTO T_DV_SINTOMA(
+    NM_SINTOMA,
+    DS_SINTOMA
+) VALUES(
+    'Tosse', 
+    'Expiração repentina, vigoroso e involuntária ao liberar o ar e limpar uma irritação na garganta ou nas vias aéreas.'
+);
+INSERT INTO T_DV_SINTOMA(
+    NM_SINTOMA,
+    DS_SINTOMA
+) VALUES(
+    'Visão Turva', 
+    'A visão turva se caracteriza pela perda da capacidade de ver nitidamente uma imagem, inclusive seus pequenos detalhes. Essa alteração visual também pode ser descrita como a dificuldade de enxergar de longe, de perto, ou mesmo reconhecer rostos, placas, e inclui ainda a redução da visão central ou periférica, ou seja, aquela que está fora do nosso foco central.'
+);
+INSERT INTO T_DV_SINTOMA(
+    NM_SINTOMA,
+    DS_SINTOMA
+) VALUES(
+    'Fadiga', 
+    'Sentir cansaço excessivo, pouca energia e um forte desejo de dormir que interfere nas atividades diárias normais.'
+);
+INSERT INTO T_DV_SINTOMA(
+    NM_SINTOMA,
+    DS_SINTOMA
+) VALUES(
+    'Falta de ar', 
+    'Respiração difícil ou ofegante.'
+);
+INSERT INTO T_DV_SINTOMA(
+    NM_SINTOMA,
+    DS_SINTOMA
+) VALUES(
+    'Dor nas articulações', 
+    'Desconforto físico no local onde dois ou mais ossos se encontram para formar uma junta, variando de leve a incapacitante.'
 );
 
 -- 
